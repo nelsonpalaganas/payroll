@@ -1,0 +1,27 @@
+form{
+    background-color: #F5F5F5;
+    width: 300px;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    align-items: flex-start;
+    margin: 0 auto
+}
+
+input {
+    color: black;
+    border-radius: 10px;
+    font: 15px system-ui;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font: 13px system-ui;
+    padding: 5px;
+}
