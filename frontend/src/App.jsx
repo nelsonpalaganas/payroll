@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import './App.css';
 import RegistrationForm from './auth/registerForm'
 import LoginForm from './auth/loginForm';
+import AdminForm from './auth/adminForm'
 
 function App() {
 
@@ -27,16 +28,16 @@ function App() {
         <div className='onboard-card'>
           <h2>Select Role</h2>
             <form>
-              <div className='employee-button'>
+              <div className='fields'>
                 <button type = "button" onClick={handleEmployee}>Employee</button>
-              </div>
-              <div>
                 <button type = "button" onClick={handleAdmin}>Admin</button>
               </div>
+             
               
             </form>
         </div>
         {showLoginForm && <LoginForm/>}
+        {showAdminForm && <AdminForm/>}
         {/* <RegistrationForm/> */}
         
     </div>

@@ -16,64 +16,60 @@ const RegistrationForm = () => {
     }
 
     return(
-        <div>
-            <form>
-            <h2>Register Now</h2>
-                <input 
-                type="text"
-                placeholder="Firstname"
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)} 
-                />           
-                <br />
-                <input 
-                type="text"
-                placeholder="Lastname"
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)} 
-                />
-                <br />
-                <input 
-                type="email"
-                placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)} 
-                />
-                <br />
-                <input 
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)} 
-                />
-                <br />
-                <input 
-                type="text"
-                placeholder="Role"
-                value={role}
-                onChange={(e) => setRole(e.target.value)} 
-                />
-                <br />
-                <input 
-                type="date"
-                value={dob}
-                onChange={(e) => setDob(e.target.value)} 
-                />
-                <br />
-                <input 
-                type="number"
-                placeholder="Mobile number"
-                value={mobile}
-                onChange={(e) => setMobile(e.target.value)} 
-                />
-                <br />
-                <input 
-                type="number"
-                placeholder="Age"
-                value={age}
-                onChange={(e) => setAge(e.target.value)} 
-                />
-                <br />
+        <div className="container">
+            <form className="register-form">
+                <h2>Register Now</h2>
+                <div className="fields">
+                    <input 
+                    type="text"
+                    placeholder="Firstname"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)} 
+                    />    
+                
+                    <input 
+                    type="text"
+                    placeholder="Lastname"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)} 
+                    />
+                    <input 
+                    type="email"
+                    placeholder="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)} 
+                    />
+                    <input 
+                    type="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)} 
+                    />
+                    <input 
+                    type="text"
+                    placeholder="Role"
+                    value={role}
+                    onChange={(e) => setRole(e.target.value)} 
+                    />
+                    <input 
+                    type="date"
+                    value={dob}
+                    onChange={(e) => setDob(e.target.value)} 
+                    />
+                    <input 
+                    type="number"
+                    placeholder="Mobile number"
+                    value={mobile}
+                    onChange={(e) => setMobile(e.target.value)} 
+                    />
+                    <input 
+                    type="number"
+                    placeholder="Age"
+                    value={age}
+                    onChange={(e) => setAge(e.target.value)} 
+                    />
+                </div>
+                
                 <button onClick={handleRegister}>Sign up</button>
             </form>
         </div>

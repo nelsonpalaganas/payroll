@@ -10,25 +10,21 @@ const LoginForm = () => {
     }
 
     return (
-        <div className="login-card">
+        <div className="container">
             <form className="login-form">
             <h2>Login</h2>
-                <div className="email-form">
+                <div className="fields">
                     <input 
                     type="email"
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)} />
-                </div>
-                <div className="password-form">
                     <input 
                     type="password"
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)} />
                 </div>
-                
-                <br />
                 <button>Login</button>
             </form>
         </div>

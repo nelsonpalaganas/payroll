@@ -22,14 +22,8 @@ body{
   flex-direction: column;
   float: left;
   background-color: #F5F5F5;
-  /* width: 100px; */
   border-radius: 11px;
   padding-left: 20px;
   padding-bottom: 20px;
   padding-right: 20px;
-}
-
-.employee-button{
-  display: flex;
-  padding-bottom: 10px;
 }

@@ -1,4 +1,4 @@
-.login-card {
+.container {
     background-color: #F5F5F5;
     width: 250px;
     border-radius: 11px;
@@ -26,12 +26,24 @@ button {
     padding: 5px;
 }
 
-.email-form{
+.admin-fields{
+    display: flex;
+    padding-bottom: 6px;
+}
+
+.pin-field{
     display: flex;
     padding-bottom: 10px;
 }
 
-.password-form {
+.fields {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 6px;
     padding-bottom: 10px;
+}
+
+.admin-button {
+    margin-right: 6px;;
 }
